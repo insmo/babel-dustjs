@@ -13,6 +13,15 @@ def test_text():
         assert message == 'Hello world!'
         assert funcname is None
 
+def test_text_singlequotes():
+    with open(datafile('test8.obvt')) as f:
+        r = list(extractor(f, [], [], []))
+        assert len(r) == 1
+        lineno, funcname, message, comments = r[0]
+        assert lineno == 1
+        assert message == 'Hello world!'
+        assert funcname is None
+
 def test_text_empty():
     with open(datafile('test2.obvt')) as f:
         r = list(extractor(f, [], [], []))

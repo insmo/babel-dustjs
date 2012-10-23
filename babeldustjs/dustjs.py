@@ -6,7 +6,7 @@ TEXT_TOKEN = 0
 NAME_TOKEN = 1
 
 single_pat = re.compile('''
-{@(?:i18n|_)\stext="(.*)"/}
+{@(?:i18n|_)\stext=["']+(.*)["']+/}
 ''', re.MULTILINE | re.VERBOSE)
 
 multiopen_pat = re.compile('''
