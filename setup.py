@@ -8,7 +8,7 @@ long_description = (
 
 setup(
     name='babel-dustjs',
-    version='0.0.1',
+    version='0.1.0',
     description='DustJS Template message extractor for Babel',
     long_description=long_description,
     author='Simon Zimmermann',

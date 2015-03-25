@@ -75,7 +75,7 @@ def extractor(fileobj, keywords, comment_tags, options):
                 end = start+match.start()
                 examined += end
                 data.append(s[start:end])
-                yield (lineno, None, ''.join(data), [])
+                yield (lineno, None, "".join(data), [])
             else:
                 # record all the data since the closing match is not on this line.
                 examined = len(l)
